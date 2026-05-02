@@ -1,0 +1,107 @@
+.headC-section {
+  height: 400px;
+  overflow: hidden;
+}
+
+.contactimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100);
+}
+
+/* Main container using Flexbox for side-by-side layout */
+.contact-container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ gap: 50px;
+}
+
+/* Styling for the left (info) and right (map) sections */
+.info-section,
+.map-section {
+  flex: 1; /* Each section takes up half the available space */
+  min-width: 350px; /* Prevents sections from getting too narrow */
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Styling for each contact block (Address, Email, etc.) */
+.contact-item {
+  margin-bottom: 30px;
+}
+
+.contact-item .title {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.contact-item .content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+.contact-item .content a {
+  color: #007bff;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.contact-item .content a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the social media icons */
+.social-icons {
+  display: flex;
+  gap: 15px; /* Creates space between the icons */
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+/* Ensures the map iframe fills its container perfectly */
+.map-section {
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.gmap_iframe {
+  width: 350px !important;
+  height: 400px !important;
+  border: 0;
+}

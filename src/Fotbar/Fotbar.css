@@ -1,0 +1,97 @@
+.fotbar {
+  background: linear-gradient(135deg, hsl(172 61% 41%), hsl(172 61% 31%));
+  color: white;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 20px 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer-section h4 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Contact styling */
+.contact-item {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.contact-item a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 0.95rem;
+}
+
+.contact-item a:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+/* Copyright section */
+.footer-bottom {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0;
+}
+
+.Fbtxt {
+  text-align: center;
+  font-size: 0.9rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    padding: 2rem 15px 1.5rem;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  
+  .contact-item {
+    align-items: center;
+  }
+  
+  .footer-bottom {
+    padding: 1rem 0;
+  }
+  
+  .Fbtxt {
+    font-size: 0.85rem;
+    padding: 0 15px;
+  }
+}
